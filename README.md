@@ -37,8 +37,6 @@ npm install
 npm run dev
 ```
 
-Le site sera disponible sur [http://localhost:5173](http://localhost:5173)
-
 ### Build production
 
 ```bash
