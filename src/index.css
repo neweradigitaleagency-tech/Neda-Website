@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "DM Serif Display", serif;
+  --font-mono: "Space Mono", monospace;
+  
+  --color-neda-lime: #aaff4e;
+  --color-neda-lime-dark: #7acc2e;
+  --color-neda-violet: #9a6bff;
+  --color-neda-violet-dark: #6b3fcc;
+  --color-neda-rose: #ff44da;
+  --color-neda-rose-dark: #cc2aad;
+  --color-neda-accent: #0047FF;
+  --color-neda-accent-hover: #0035CC;
+  --color-bg: #ffffff;
+  --color-fg: #0A0A0A;
+  --color-muted: #6B7280;
+  --color-border: #E5E7EB;
+  --color-card: #F9FAFB;
+  --color-accent: #0047FF;
+  --color-accent-light: #EEF2FF;
+  --color-purple-soft: #E0E7FF;
+ }
+
+ :root {
+  --bg: #ffffff;
+  --fg: #0A0A0A;
+  --muted: #6B7280;
+  --border: #E5E7EB;
+  --card-bg: #F9FAFB;
+  --featured-bg: linear-gradient(145deg, #EEF2FF, #E0E7FF);
+  --accent: #0047FF;
+  --accent-hover: #0035CC;
+  --accent-light: #EEF2FF;
+  --featured-border: #A5B4FC;
+  --check: #0047FF;
+  --dash: #D1D5DB;
+  --faq-bg: linear-gradient(160deg, #f8f6ff 0%, #e0e7ff 100%);
+  --radius-card: 16px;
+  --radius-pill: 999px;
+ }
+
+.neda-gradient {
+  background: linear-gradient(45deg, #aaff4e, #9a6bff, #ff44da);
+}
+
+.neda-gradient-text {
+  background: linear-gradient(45deg, #aaff4e, #9a6bff, #ff44da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.neda-gradient-border {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(45deg, #aaff4e, #9a6bff, #ff44da) border-box;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 71, 255, 0.3) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, rgba(0, 71, 255, 0.3), rgba(154, 107, 255, 0.3));
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, rgba(0, 71, 255, 0.5), rgba(154, 107, 255, 0.5));
+}
+
+::selection {
+  background: rgba(0, 71, 255, 0.2);
+  color: #0A0A0A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #0f0f0f;
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes drift {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(30px, -30px) rotate(5deg); }
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-marquee {
+  animation: marquee-left 30s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 30s linear infinite;
+}
+
+.animate-drift {
+  animation: drift 8s ease-in-out infinite alternate;
+}
+
+input, textarea, select {
+  color-scheme: light;
+}
+
+.service-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.service-table th {
+  background: #F9FAFB;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  padding: 12px 20px;
+}
+
+.service-table td {
+  padding: 18px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.service-table td:first-child { font-weight: 600; color: var(--fg); }
+.service-table td:nth-child(2) { color: var(--muted); }
+.service-table td:last-child {
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+  text-align: right;
+}
+
+.service-table tr:hover td { background: #F9FAFB; }
+
+.check-icon { color: var(--check); font-weight: 700; }
+.dash-icon { color: var(--dash); }
+.col-standard { background: rgba(99,102,241,0.06); }
+
+.category-row td {
+  background: #F9FAFB;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9CA3AF;
+  padding: 10px 20px;
+}
