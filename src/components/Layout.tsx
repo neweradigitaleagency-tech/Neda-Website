@@ -102,31 +102,31 @@ className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all dur
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-x-4 top-24 z-40 md:hidden"
+            className="fixed left-4 right-4 sm:left-auto sm:right-auto sm:w-full sm:max-w-sm top-24 mx-auto z-40 md:hidden"
           >
-            <div className="bg-white/95 backdrop-blur-2xl border border-gray-100 rounded-2xl p-4 shadow-xl">
-<div className="flex flex-col gap-2">
-                 {navLinks.map((link) => (
-                   <Link
-                     key={link.path}
-                     to={link.path}
-                     className={`px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-                       location.pathname === link.path
-                         ? 'neda-gradient text-white'
-                         : 'text-[#6b7280] hover:bg-gray-100'
-                     }`}
-                   >
-                     {link.label}
-                   </Link>
-                 ))}
-<a 
-                    href="https://wa.me/2250759595959" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2 px-4 py-3 rounded-xl text-sm font-semibold neda-gradient text-white text-center"
+<div className="bg-white/95 backdrop-blur-2xl border border-gray-100 rounded-2xl p-4 shadow-xl">
+              <div className="flex flex-col gap-2 text-center">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all ${
+                      location.pathname === link.path
+                        ? 'neda-gradient text-white'
+                        : 'text-[#6b7280] hover:bg-gray-100'
+                    }`}
                   >
-                    Parlons de votre projet
-                  </a>
+                    {link.label}
+                  </Link>
+                ))}
+                <a 
+                  href="https://wa.me/2250759595959" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 px-4 py-3 rounded-xl text-sm font-semibold neda-gradient text-white text-center"
+                >
+                  Parlons de votre projet
+                </a>
                </div>
             </div>
           </motion.div>
