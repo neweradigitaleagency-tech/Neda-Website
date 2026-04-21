@@ -1,20 +1,103 @@
+# NEDA Website
+
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img width="120" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" alt="NEDA Logo" />
 </div>
 
-# Run and deploy your AI Studio app
+<p align="center">
+  <strong>New Era Digital Agency</strong> — Agence digitale basée en Côte d'Ivoire
+</p>
 
-This contains everything you need to run your app locally.
+<p align="center">
+  <a href="https://studio-maheni.vercel.app/">Studio</a> •
+  <a href="https://www.instagram.com/neweradigitaleagency/">Instagram</a> •
+  <a href="https://www.tiktok.com/@neweradigitaleagency">TikTok</a> •
+  <a href="https://www.linkedin.com/in/new-era-digitale-agency-undefined-b0a8893b9">LinkedIn</a>
+</p>
 
-View your app in AI Studio: https://ai.studio/apps/145a09e1-a0c8-438c-b6f5-f24f56ac82a9
+---
 
-## Run Locally
+## 🚀 Démarrage rapide
 
-**Prerequisites:**  Node.js
+### Prérequis
+- Node.js 18+
+- npm ou yarn
 
+### Installation
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+# Cloner le projet
+git clone https://github.com/neweradigitaleagency-tech/Neda-Website.git
+cd Neda-Website
+
+# Installer les dépendances
+npm install
+
+# Lancer en développement
+npm run dev
+```
+
+Le site sera disponible sur [http://localhost:5173](http://localhost:5173)
+
+### Build production
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 📁 Structure du projet
+
+```
+src/
+├── components/       # Composants réutilisables
+│   ├── Layout.tsx     # Layout principal (header, footer)
+│   ├── FAQSection.tsx # Section FAQ
+│   ├── PricingSection.tsx # Grille tarifaire
+│   └── ...
+├── pages/            # Pages du site
+│   ├── Home.tsx      # Page d'accueil
+│   ├── Services.tsx  # Services
+│   ├── Portfolio.tsx # Portfolio
+│   ├── Pricing.tsx    # Tarifs
+│   ├── FAQ.tsx       # FAQ
+│   └── Contact.tsx    # Contact
+├── App.tsx          # Router principal
+├── index.css        # Styles globaux
+└── main.tsx        # Point d'entrée
+```
+
+---
+
+## 🎨 Stack technique
+
+- **Framework:** React + TypeScript + Vite
+- **Routing:** React Router v6
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+
+---
+
+## 📧 Contact
+
+**New Era Digital Agency**
+- Email: neweradigitaleagency@gmail.com
+- WhatsApp: +225 07 59 59 59 59
+- Adresse: Abidjan, Cocody — Côte d'Ivoire
+
+---
+
+## ⭐ Services
+
+- Création de sites web
+- Design & Branding
+- Gestion des réseaux sociaux
+- Publicité digitale
+- SEO & Référencement
+
+<p align="center">
+  © {new Date().getFullYear()} NEDA — Tous droits réservés
+</p>
