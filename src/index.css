@@ -141,6 +141,12 @@ input, textarea, select {
   color-scheme: light;
 }
 
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: auto;
+}
+
 .service-table {
   width: 100%;
   border-collapse: separate;
