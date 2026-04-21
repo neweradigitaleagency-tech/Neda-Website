@@ -270,7 +270,7 @@ export default function PricingSection() {
             animate={{ opacity: 1 }}
             className="space-y-16"
           >
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {packs.map((pack, i) => (
                 <motion.div
                   key={pack.name}

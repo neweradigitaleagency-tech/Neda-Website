@@ -38,7 +38,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             isScrolled ? 'py-4' : 'py-5'
           }`}>
             <Link to="/" className="flex items-center gap-2">
-              <img src={logo} alt="neda" className="h-24" />
+<img src={logo} alt="neda" className="h-16 sm:h-20 md:h-24" />
             </Link>
             
 <div className="hidden md:flex items-center gap-1">
@@ -140,7 +140,7 @@ className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all dur
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="md:col-span-2">
               <Link to="/" className="flex items-center gap-2 mb-4">
-<img src={logo} alt="neda" className="h-24" />
+<img src={logo} alt="neda" className="h-12 sm:h-16 md:h-24" />
               </Link>
               <p className="text-[#6b7280] text-sm max-w-md leading-relaxed mb-6">
                 Agence digitale basée en Côte d'Ivoire. Nous créons des expériences web exceptionnelles pour les entreprises africaines avec des solutions créatives et performantes.
