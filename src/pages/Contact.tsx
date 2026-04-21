@@ -51,21 +51,21 @@ export default function Contact() {
             className="text-center max-w-3xl mx-auto"
           >
             <span className="text-sm font-bold uppercase tracking-widest text-[#aaff4e] mb-4 block">Parlons de votre projet</span>
-            <h1 className="text-5xl md:text-6xl font-black mb-6">Contact</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 sm:mb-6">Contact</h1>
             <p className="text-xl text-[#9CA3AF]">Nous sommes impatients de discuter de vos besoins et de vous accompagner.</p>
           </motion.div>
         </div>
       </section>
 
-      <section className="py-16 px-6 relative">
+      <section className="py-12 md:py-16 px-4 sm:px-6 relative">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.1 }}
             >
-              <div className="p-8 rounded-2xl bg-white/5 border border-white/20">
+              <div className="p-6 sm:p-8 rounded-2xl bg-white/5 border border-white/20">
                 <h3 className="text-xl font-bold mb-6">Informations de contact</h3>
 
                 <div className="space-y-6">
@@ -111,7 +111,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="p-8 rounded-2xl bg-white/5 border border-white/20 mt-8">
+              <div className="p-6 sm:p-8 rounded-2xl bg-white/5 border border-white/20 mt-6 sm:mt-8">
                 <h3 className="text-xl font-bold mb-6">Contactez-nous directement</h3>
                 <a
                   href="https://wa.me/2250503145327"
@@ -130,7 +130,7 @@ export default function Contact() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <div className="p-8 md:p-10 rounded-2xl bg-white/5 border border-white/20">
+              <div className="p-6 sm:p-8 md:p-10 rounded-2xl bg-white/5 border border-white/20">
                 {isSubmitted ? (
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -154,8 +154,8 @@ export default function Contact() {
                     <h3 className="text-2xl font-bold mb-2">Envoyez-nous un message</h3>
                     <p className="text-[#9CA3AF] mb-8">Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.</p>
 
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                      <div className="grid md:grid-cols-2 gap-6">
+                    <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                         <div>
                           <label className="block text-sm font-medium mb-2 text-white">Nom complet *</label>
                           <input
@@ -182,7 +182,7 @@ export default function Contact() {
                         </div>
                       </div>
 
-                      <div className="grid md:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                         <div>
                           <label className="block text-sm font-medium mb-2 text-white">Téléphone</label>
                           <input
