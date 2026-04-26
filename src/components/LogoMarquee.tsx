@@ -88,7 +88,7 @@ export default function LogoMarquee() {
         >
           <p className="text-sm text-[#6B7280] font-medium mb-2">Nos Partenaires</p>
           <h2 className="text-2xl md:text-3xl font-semibold text-[#0A0A0A]">
-            Ils nous font confiance
+            Des technologies de référence mondiale
           </h2>
         </motion.div>
 

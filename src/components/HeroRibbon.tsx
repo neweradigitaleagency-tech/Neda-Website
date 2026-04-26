@@ -1,90 +1,29 @@
-import { useRef, useMemo } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { Environment } from '@react-three/drei';
-import * as THREE from 'three';
+import { motion } from 'motion/react';
 
-function Ribbon() {
-  const meshRef = useRef<THREE.Mesh>(null);
-  
-  const curve = useMemo(() => {
-    return new THREE.CatmullRomCurve3([
-      new THREE.Vector3(-4, -1.5, 0),
-      new THREE.Vector3(-2, 0.5, 1),
-      new THREE.Vector3(0, -0.5, -0.5),
-      new THREE.Vector3(2, 1, 0.5),
-      new THREE.Vector3(4, -0.5, 0),
-    ], false, 'catmullrom', 0.5);
-  }, []);
-
-  const geometry = useMemo(() => {
-    return new THREE.TubeGeometry(curve, 128, 0.15, 16, false);
-  }, [curve]);
-
-  const material = useMemo(() => {
-    return new THREE.MeshPhysicalMaterial({
-      color: new THREE.Color('#60a5fa'),
-      metalness: 0.0,
-      roughness: 0.1,
-      transmission: 0.4,
-      thickness: 0.5,
-      envMapIntensity: 1.2,
-      clearcoat: 1,
-      clearcoatRoughness: 0.1,
-      ior: 1.5,
-      transparent: true,
-      opacity: 0.9,
-    });
-  }, []);
-
-  useFrame((state) => {
-    if (meshRef.current) {
-      const time = state.clock.getElapsedTime();
-      const scale = 1 + Math.sin(time * 0.5) * 0.05;
-      meshRef.current.scale.set(scale, scale, scale);
-      meshRef.current.rotation.y = Math.sin(time * 0.3) * 0.1;
-      meshRef.current.position.y = Math.sin(time * 0.8) * 0.1;
-    }
-  });
-
+function AnimatedRibbon() {
   return (
-    <mesh ref={meshRef} geometry={geometry} material={material} position={[0, 0, 0]} />
-  );
-}
-
-function AmbientGlow() {
-  const lightRef = useRef<THREE.PointLight>(null);
-  
-  useFrame((state) => {
-    if (lightRef.current) {
-      const time = state.clock.getElapsedTime();
-      lightRef.current.position.x = -2 + Math.sin(time * 0.5) * 0.5;
-      lightRef.current.position.y = Math.sin(time * 0.7) * 0.3;
-      lightRef.current.intensity = 0.4 + Math.sin(time * 0.4) * 0.1;
-    }
-  });
-
-  return (
-    <>
-      <pointLight ref={lightRef} position={[-2, 0, 1]} color="#7c3aed" intensity={0.4} distance={8} />
-      <pointLight position={[2, 0, -1]} color="#2563eb" intensity={0.3} distance={6} />
-    </>
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <motion.div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%]"
+        style={{
+          background: 'conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(96, 165, 250, 0.15) 60deg, transparent 120deg)',
+        }}
+        animate={{ rotate: 360 }}
+        transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+      />
+      <motion.div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%]"
+        style={{
+          background: 'conic-gradient(from 180deg at 50% 50%, transparent 0deg, rgba(124, 58, 237, 0.1) 90deg, transparent 180deg)',
+        }}
+        animate={{ rotate: -360 }}
+        transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
+      />
+      <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-white/50" />
+    </div>
   );
 }
 
 export default function HeroRibbon() {
-  return (
-    <div className="absolute inset-0 w-full h-full">
-      <Canvas
-        camera={{ position: [0, 0, 5], fov: 50 }}
-        gl={{ antialias: true, alpha: true }}
-        style={{ background: 'transparent' }}
-      >
-        <ambientLight intensity={0.6} />
-        <directionalLight position={[5, 5, 5]} intensity={0.5} />
-        <Ribbon />
-        <AmbientGlow />
-        <Environment preset="city" />
-      </Canvas>
-    </div>
-  );
+  return <AnimatedRibbon />;
 }

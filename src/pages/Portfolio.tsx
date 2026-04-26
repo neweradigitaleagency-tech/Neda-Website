@@ -7,64 +7,88 @@ const projects = [
   {
     id: 1,
     title: 'Studio Maheni',
-    category: 'Web Design',
-    desc: 'Studio de design architectural - Création site vitrine moderne avec portfolio interactif.',
-    image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=600&fit=crop',
-    tags: ['Web Design', 'Portfolio', 'Architecture'],
+    category: 'Site Web',
+    desc: 'Studio de fitness et pole dance à Abidjan. Site vitrine moderne avec portfolio interactif.',
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d6b?w=800&h=600&fit=crop',
+    tags: ['Web', 'Fitness', 'Pole Dance'],
     link: 'https://studio-maheni.vercel.app/',
     isIframe: true
   },
   {
     id: 2,
-    title: 'TechStart CI',
-    category: 'Site Vitrine',
-    desc: 'Site vitrine moderne pour une startup technologique basée à Abidjan avec intégration CRM.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-    tags: ['Web Design', 'React', 'CRM']
+    title: 'Vidéos Pole Dance',
+    category: 'Social Media',
+    desc: 'Vidéos de pole dance et fitness.',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f30594390?w=800&h=600&fit=crop',
+    tags: ['Video', 'Social'],
+    link: 'https://drive.google.com/file/d/1uMtAqkHy2ZHfaeZTfQEcfGGpZWob3tNW/view'
   },
   {
     id: 3,
-    title: 'Mode Africaine',
+    title: 'Cours et Entraînements',
     category: 'Social Media',
-    desc: 'Stratégie de contenu et gestion des réseaux sociaux pour une marque de mode africaine.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
-    tags: ['Social Media', 'Content', 'Ads']
+    desc: 'Vidéos de cours et entraînements.',
+    image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=600&fit=crop',
+    tags: ['Video', 'Training'],
+    link: 'https://drive.google.com/file/d/1HWmK7bT520-e_AE-Im2Mbn4nymoNh9CH/view'
   },
   {
     id: 4,
-    title: 'Café de l\'Avenue',
-    category: 'Branding & Web',
-    desc: 'Refonte complète de l\'identité visuelle et création d\'un site e-commerce pour une chaîne de cafés premium.',
-    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=600&fit=crop',
-    tags: ['Branding', 'E-commerce', 'SEO']
+    title: 'Événements',
+    category: 'Social Media',
+    desc: 'Couverture des événements.',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop',
+    tags: ['Video', 'Event'],
+    link: 'https://drive.google.com/file/d/1HkYNJ7I7DDM9yNGNbZwHpHam-mZaQwuy/view'
   },
   {
     id: 5,
-    title: 'Immobilier Prestige',
-    category: 'Web & SEO',
-    desc: 'Plateforme de présentation immobilière avec visites virtuelles et optimisation SEO locale.',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop',
-    tags: ['Web', 'SEO', 'Virtual Tours']
+    title: 'Contenus Créatifs',
+    category: 'Social Media',
+    desc: 'Contenus créatifs pour réseaux sociaux.',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
+    tags: ['Content', 'Creative'],
+    link: 'https://drive.google.com/file/d/1HUXCpHOB2KtYgTGrPJIGiLobSeTi_BtQ/view'
   },
   {
     id: 6,
-    title: 'Restaurant Le Palais',
-    category: 'Branding',
-    desc: 'Création de logo, menu design et présence digitale pour un restaurant gastronomique.',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop',
-    tags: ['Branding', 'Print', 'Social']
+    title: 'Séances Photo',
+    category: 'Social Media',
+    desc: 'Séances photo et visuels.',
+    image: 'https://images.unsplash.com/photo-1523275335684-3788b24f2bde?w=800&h=600&fit=crop',
+    tags: ['Photo', 'Visual'],
+    link: 'https://drive.google.com/file/d/1HnvoZL6G0oBlerk-RKhdeE0ENvt8lgwf/view'
   },
   {
     id: 7,
-    title: 'Fitness Pro',
-    category: 'App Mobile',
-    desc: 'Application mobile de fitness avec suivi personnalisé et coach virtuel IA.',
-    image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=600&fit=crop',
-    tags: ['Mobile App', 'AI', 'UI/UX']
+    title: 'Tournages',
+    category: 'Social Media',
+    desc: 'Tournages et montages vidéo.',
+    image: 'https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=800&h=600&fit=crop',
+    tags: ['Video', 'Editing'],
+    link: 'https://drive.google.com/file/d/1LML72BqIqi9wC6cjYQdz4uQ5KGcdx2Oz/view'
+  },
+  {
+    id: 8,
+    title: 'Brand Content',
+    category: 'Social Media',
+    desc: 'Contenu de marque et branding.',
+    image: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7e0c2?w=800&h=600&fit=crop',
+    tags: ['Brand', 'Content'],
+    link: 'https://drive.google.com/file/d/1S2CBgioYgkDTBTrJt4zesBmxRzSsQwV7/view'
+  },
+  {
+    id: 9,
+    title: 'Réseaux Sociaux',
+    category: 'Social Media',
+    desc: 'Gestion des réseaux sociaux.',
+    image: 'https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=800&h=600&fit=crop',
+    tags: ['Social', 'Management'],
+    link: 'https://drive.google.com/file/d/1oiJ8ecsQPKF5TOWo557la4jLN0CJSDns/view'
   },
 ];
 
-const categories = ['Tous', 'Branding', 'Web', 'Social Media', 'App Mobile'];
+const categories = ['Tous', 'Site Web', 'Social Media'];
 
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
@@ -207,7 +231,7 @@ export default function Portfolio() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full neda-gradient text-white font-semibold hover:opacity-90 transition-opacity"
                   >
-                    Voir le site <ExternalLink className="w-4 h-4" />
+                    {selectedProject.category === 'Social Media' ? 'Voir la vidéo' : 'Voir le site'} <ExternalLink className="w-4 h-4" />
                   </a>
                 )}
               </div>

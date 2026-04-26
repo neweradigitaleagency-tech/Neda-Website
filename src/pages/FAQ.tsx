@@ -137,6 +137,7 @@ export default function FAQ() {
               placeholder="Rechercher une question..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+              aria-label="Rechercher dans la FAQ"
               className="w-full pl-12 pr-4 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-[#aaff4e] focus:outline-none transition-colors"
             />
           </motion.div>
