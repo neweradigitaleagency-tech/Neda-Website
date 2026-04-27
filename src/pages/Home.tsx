@@ -19,22 +19,22 @@ export default function Home() {
               <Sparkles className="w-4 h-4 text-[#aaff4e]" />
               <span className="text-sm text-[#6B7280]">Agence Digitale basée en Côte d'Ivoire</span>
             </div>
-            
+
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-6 sm:mb-8">
               <span className="neda-gradient-text">Boostez votre</span>
               <br />
               <span className="text-[#0A0A0A]">Impact Digital</span>
             </h1>
-            
+
             <p className="text-base sm:text-lg text-[#6B7280] leading-relaxed mb-8 sm:mb-10 max-w-2xl mx-auto">
               Nous simplifions le web pour les entreprises africaines.
               <br className="hidden sm:block" />
               Design, Développement, Contenu et Stratégie réunis sous un même toit.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
-              <a 
-                href="https://wa.me/2250759595959" 
+              <a
+                href="https://wa.me/2250759595959"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group px-6 sm:px-8 py-3 sm:py-4 rounded-full neda-gradient text-white font-semibold text-base sm:text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2"
@@ -42,8 +42,8 @@ export default function Home() {
                 Parler avec nos experts
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
-              <Link 
-                to="/portfolio" 
+              <Link
+                to="/portfolio"
                 className="px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-white border-2 border-[#0A0A0A] text-[#0A0A0A] font-semibold text-base sm:text-lg hover:bg-[#0A0A0A] hover:text-white transition-colors text-center"
               >
                 Voir le Portfolio
@@ -136,8 +136,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <Link 
-              to="/pricing" 
+            <Link
+              to="/pricing"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full neda-gradient text-white font-semibold text-lg hover:scale-105 transition-transform"
             >
               Voir tous nos tarifs <ArrowRight className="w-5 h-5" />
@@ -158,12 +158,12 @@ export default function Home() {
           >
             <div className="absolute inset-0 neda-gradient opacity-20" />
             <div className="absolute inset-0 backdrop-blur-xl" />
-            
+
             <div className="relative">
               <h2 className="text-4xl md:text-5xl font-bold text-[#0A0A0A] mb-6">Prêt à transformer votre digital ?</h2>
               <p className="text-xl text-[#6B7280] mb-10 max-w-2xl mx-auto">Discutons de votre projet et trouvons ensemble la meilleure solution pour vos besoins.</p>
-              <a 
-                href="https://wa.me/2250759595959" 
+              <a
+                href="https://wa.me/2250759595959"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-10 py-5 rounded-full neda-gradient text-white font-semibold text-lg hover:scale-105 transition-transform"
