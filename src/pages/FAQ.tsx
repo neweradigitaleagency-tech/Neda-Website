@@ -4,61 +4,65 @@ import { ChevronDown, Search } from 'lucide-react';
 
 const faqs = [
   {
-    category: 'Général',
+    category: 'Stratégie & Approche',
     questions: [
       {
-        q: 'Combien de temps prend la création d\'un site web ?',
-        a: 'La durée dépend de la complexité du projet. Un site vitrine classique prend généralement 2 à 4 semaines, tandis qu\'un site e-commerce ou sur-mesure peut nécessiter 6 à 12 semaines. Nous vous fournirons un calendrier précis lors du démarrage.'
+        q: 'Comment définissez-vous le succès de nos campagnes ?',
+        a: 'Nous définissons le succès selon vos objectifs métier spécifiques. Nous suivons des KPIs concrets : return on ad spend (ROAS), coût par acquisition (CPA), taux de conversion, volume de leads et profit. Nous reportons sur ce qui compte vraiment pour votre business, pas sur des métriques vanity.'
       },
       {
-        q: 'Êtes-vous disponibles pour des projets urgents ?',
-        a: 'Oui, nous acceptons parfois des projets urgents avec des délais压缩és. Des frais supplémentaires peuvent s\'appliquer selon la charge de travail. Contactez-nous pour discuter de votre timeline.'
+        q: 'Quelle est votre approche pour les réseaux sociaux ?',
+        a: 'Nous ne proposons pas de solution cookie-cutter. Chaque stratégie est adaptée à votre audience, votre secteur et vos objectifs. Nous créons du contenu original, analysons les performances et optimisons en continu pour maximiser l\'engagement et les conversions.'
       },
       {
-        q: 'Travaillez-vous avec des clients hors de Côte d\'Ivoire ?',
-        a: 'Absolument ! Nous avons l\'habitude de travailler à distance avec des clients en Afrique et à l\'international. Nous utilisons des outils de collaboration efficaces pour garantir une communication fluide.'
+        q: 'Comment boostez-vous notre SEO ?',
+        a: 'Nous combinons SEO technique et contenu de qualité. Nous optimisons votre site, créons du contenu optimisé pour les moteurs de recherche, et construisons des backlinks éthiques. Nous adaptons notre stratégie aux dernières mises à jour Google.'
+      },
+      {
+        q: 'Intégrez-vous l\'IA dans votre travail ?',
+        a: 'Nous utilisons l\'IA comme outil d\'assistance, mais la stratégie et les creativas sont toujours humaines. Cela nous permet d\'être efficaces tout en garantissant un contenu authentique qui résonne avec votre audience.'
       },
     ]
   },
   {
-    category: 'Services Web',
+    category: 'Résultats & Reporting',
     questions: [
       {
-        q: 'Gérez-vous la publicité sur Facebook et Instagram ?',
-        a: 'Oui, nous créons, gérons et optimisons vos campagnes publicitaires sur les réseaux sociaux pour maximiser votre retour sur investissement (ROI) et atteindre votre cible. Nous fournissons des rapports mensuels détaillés.'
+        q: 'À quelle fréquence recevez-vous des rapports ?',
+        a: 'Nous fournissons un rapport mensuel avec une réunion de suivi en direct. Les rapports incluent : performances vs objectifs, points clés découverts, et prochaines étapes recommandées. Vous avez accès à un dashboard en temps réel.'
       },
       {
-        q: 'Proposez-vous des services de création de contenu ?',
-        a: 'Absolument ! Notre équipe produit des visuels, des vidéos (Reels, TikTok), et rédige des textes engageants pour animer vos réseaux sociaux et votre site web. Le contenu est toujours adapté à votre audience.'
+        q: 'Pouvez-vous montrer des résultats prouvés ?',
+        a: 'Absolument. Nous fournissons des case studies vérifiables avec des métriques réelles pour des entreprises similaires à la vôtre. Nous pouvons vous mettre en contact avec des clients existants pour des témoignages directs.'
       },
       {
-        q: 'Qu\'est-ce que le SEO et pourquoi c\'est important ?',
-        a: 'Le SEO (Search Engine Optimization) améliore votre visibilité sur Google. Plus vous êtes bien positionné, plus vous attirez de visiteurs qualifiés. Nous optimisons votre site technique, votre contenu et votre présence locale.'
+        q: 'Combien de temps pour voir les premiers résultats ?',
+        a: 'Cela dépend de votre package. Pour les ads paid, les premiers résultats apparaissent en 1-2 semaines. Pour le SEO et la croissance organique, comptez 3-6 mois pour des résultats significatifs. Nous définissons des attente réalistes dès le départ.'
       },
       {
-        q: 'Mon site sera-t-il adapté aux mobiles ?',
-        a: 'Oui, tous nos sites sont 100% responsive et optimisés pour smartphones et tablettes. C\'est devenu indispensable car plus de 70% du trafic web provient des appareils mobiles.'
+        q: 'Travaillez-vous avec des entreprises comme la nôtre ?',
+        a: 'Nous avons de l\'expérience dans divers secteurs en Afrique de l\'Ouest. Même si nous n\'avez pas travaillé spécifiquement dans votre industrie, notre expertise marketing nous permet de ramp up rapidement. Nous expliquons toujours comment nous adaptons notre approche.'
       },
     ]
   },
   {
-    category: 'Tarifs & Paiement',
+    category: 'Tarifs & Contrat',
     questions: [
       {
-        q: 'Comment fonctionne le paiement de vos services ?',
-        a: 'Nous demandons généralement un acompte de 50% au début du projet, et le solde à la livraison. Pour la gestion mensuelle (réseaux sociaux), le paiement s\'effectue en début de mois.'
+        q: 'Comment fonctionne la tarification ?',
+        a: 'Nous proposons une tarification transparente. Il n\'y a pas de frais cachés. Nous proposons des packs mensuels (gestion réseaux sociaux, ads, seo) et des projets ponctuels (création site, brand identity). Tout est détaillé dans le devis.'
+      },
+      {
+        q: 'Quels sont les engagements contractuels ?',
+        a: 'Nous proposons du month-to-month pour maximum de flexibilité. Pas de contrat locker sur 12 mois. Vous pouvez arrêter à tout moment avec un préavis de 30 jours. Nous privilégions une relation partenaire, pas un engagement forcé.'
       },
       {
         q: 'Acceptez-vous les paiements par Mobile Money ?',
-        a: 'Oui ! Nous acceptons Orange Money, MTN Money et Wave. Nous facilitons les transactions pour tous nos clients ivoiriens.'
-      },
-      {
-        q: 'Y a-t-il des frais récurrents après la livraison ?',
-        a: 'Les frais récurrents sont optionnels : hébergement, maintenance, mises à jour. Vous n\'êtes jamais obligé de prendre ces services, mais ils sont recommandés pour garder votre site sécurisé et performant.'
+        a: 'Oui ! Nous acceptons Orange Money, MTN Money et Wave pour faciliter les transactions avec nos clients ivoiriens.'
       },
       {
         q: 'Puis-je payer en plusieurs fois ?',
-        a: 'Oui, nous proposons le paiement en 2 à 3 fois sans frais pour les projets supérieurs à 200k FCFA. Discutons de ce qui vous convient.'
+        a: 'Oui, nous proposons le paiement en 2 à 3 fois sans frais pour les projets supérieurs à 200k FCA. Discutons de ce qui vous convient.'
       },
     ]
   },
@@ -66,12 +70,12 @@ const faqs = [
     category: 'Support',
     questions: [
       {
-        q: 'Quel type de support offrez-vous après la livraison ?',
-        a: 'Selon le pack choisi, vous bénéficiez de 1 à 3 mois de support gratuit. Après cela, vous pouvez opter pour un contrat de maintenance mensuel pour toute assistance technique.'
+        q: 'Comment vous contacte-t-on en cas de besoin ?',
+        a: 'Vous pouvez nous contacter par WhatsApp, email ou téléphone. Nous répondons généralement sous 24h. Les clients Premium ont accès à notre support prioritaire.'
       },
       {
-        q: 'Comment puis-je vous contacter en cas de problème ?',
-        a: 'Vous pouvez nous contacter par WhatsApp, email ou téléphone. Nous répondons généralement sous 24h. Les clients Premium ont accès à notre support prioritaire 24/7.'
+        q: 'Qui sera notre interlocuteur dédié ?',
+        a: 'Vous avez un account manager dédiée qui connaît votre dossier. Vous avez un contact direct, pas un système de ticket anonymes. Nous répondons rapidement à vos questions.'
       },
     ]
   }

@@ -4,28 +4,28 @@ import { Plus, Minus, CheckCircle } from 'lucide-react';
 
 const faqs = [
   {
-    question: 'Combien de temps dure l\'essai gratuit?',
-    answer: 'Notre essai gratuit dure 7 jours complets. Vous avez accès à toutes les fonctionnalités Premium sans restriction. Aucune carte de crédit requise pour commencer.',
+    question: 'Comment définissez-vous le succès de nos campagnes ?',
+    answer: 'Nous définissons le succès selon vos objectifs métier. Nous suivons des KPIs concrets : ROAS, coût par acquisition, taux de conversion et volume de leads. Nous reportons sur ce qui compte pour votre business, pas des métriques vanity.',
   },
   {
-    question: 'Puis-je changer de plan à tout moment?',
-    answer: 'Oui, vous pouvez passer à un plan supérieur ou inférieur à tout moment. Les changements prennent effet immédiatement et les prix sont ajustés au pro-rata.',
+    question: 'Quelle est votre approche réseaux sociaux ?',
+    answer: 'Chaque stratégie est unique et adaptée à votre audience et vos objectifs. Nous créons du contenu original, analysons les performances et optimisons en continu pour maximiser l\'engagement et les conversions.',
   },
   {
-    question: 'Quels modes de paiement acceptez-vous?',
-    answer: 'Nous acceptons toutes les cartes de crédit principales (Visa, Mastercard, American Express), PayPal, et les virements bancaires pour les entreprises.',
+    question: 'Combien de temps pour voir les résultats ?',
+    answer: 'Pour les ads paid : 1-2 semaines. Pour le SEO et croissance organique : 3-6 mois. Nous définissons toujours des attentes réalistes dès le départ.',
   },
   {
-    question: 'Mes données sont-elles sécurisées?',
-    answer: 'Absolument. Nous utilisons un chiffrement de bout en bout (TLS 1.3) et toutes vos données sont stockées sur des serveurs sécurisés conformes RGPD.',
+    question: 'Travaillez-vous avec des empresas comme la nôtre ?',
+    answer: 'Nous avons de l\'expérience dans divers secteurs. Notre expertise marketing nous permet de ramp up rapidement même sans expérience directe dans votre industrie.',
   },
   {
-    question: 'Offrez-vous un support technique?',
-    answer: 'Oui, notre équipe de support est disponible 24/7 par email et chat. Les clients Standard et Premium bénéficient d\'un support prioritaire.',
+    question: 'À quelle fréquence recevons-nous des rapports ?',
+    answer: 'Rapport mensuel avec réunion de suivi. Les rapports incluent performances vs objectifs, points clés et prochaines étapes. Vous avez accès à un dashboard temps réel.',
   },
   {
-    question: 'Puis-je annuler mon abonnement?',
-    answer: 'Vous pouvez annuler à tout moment depuis votre tableau de bord. Votre accès reste actif jusqu\'à la fin de la période payée.',
+    question: 'Comment vous contacte-t-on ?',
+    answer: 'WhatsApp, email ou téléphone. Réponse sous 24h. Les clients Premium ont support prioritaire.',
   },
 ];
 
