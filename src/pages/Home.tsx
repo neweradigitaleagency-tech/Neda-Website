@@ -42,12 +42,7 @@ export default function Home() {
                 Parler avec nos experts
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
-              <Link
-                to="/portfolio"
-                className="px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-white border-2 border-[#0A0A0A] text-[#0A0A0A] font-semibold text-base sm:text-lg hover:bg-[#0A0A0A] hover:text-white transition-colors text-center"
-              >
-                Voir le Portfolio
-              </Link>
+
             </div>
           </motion.div>
         </div>
