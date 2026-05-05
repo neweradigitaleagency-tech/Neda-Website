@@ -83,7 +83,7 @@ src/
 
 **New Era Digital Agency**
 - Email: neweradigitaleagency@gmail.com
-- WhatsApp: +225 07 59 59 59 59
+- WhatsApp: +225 05 03 14 53 27
 - Adresse: Abidjan, Cocody — Côte d'Ivoire
 
 ---

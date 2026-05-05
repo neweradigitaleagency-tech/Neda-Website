@@ -92,7 +92,7 @@ className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all dur
 
 <div className="hidden md:flex items-center gap-4">
                 <a 
-                  href="https://wa.me/2250759595959" 
+                  href="https://wa.me/2250503145327" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative px-6 py-2.5 rounded-full text-sm font-semibold text-[#0f0f0f] neda-gradient-border hover:scale-105 transition-transform overflow-hidden"
@@ -143,7 +143,7 @@ className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all dur
                   </Link>
                 ))}
                 <a 
-                  href="https://wa.me/2250759595959" 
+                  href="https://wa.me/2250503145327" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 px-4 py-3 rounded-xl text-sm font-semibold neda-gradient text-white text-center"

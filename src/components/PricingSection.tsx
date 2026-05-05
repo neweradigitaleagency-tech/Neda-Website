@@ -324,7 +324,7 @@ export default function PricingSection() {
                   </div>
                   
                   <a
-                    href={`https://wa.me/2250759595959?text=Bonjour%20NEDA,%20je%20suis%20intéressé(e)%20par%20le%20pack%20${pack.name}%20(${pack.price}%20FCFA/mois).%20Pouvons-nous%20en%20discuter%20?`}
+                    href={`https://wa.me/2250503145327?text=Bonjour%20NEDA,%20je%20suis%20intéressé(e)%20par%20le%20pack%20${pack.name}%20(${pack.price}%20FCFA/mois).%20Pouvons-nous%20en%20discuter%20?`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`w-full py-3 rounded-full text-sm font-semibold transition-all text-center block ${
