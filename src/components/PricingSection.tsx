@@ -8,11 +8,11 @@ const servicesData = {
     icon: Code,
     title: 'Création & Développement Web',
     services: [
-      { name: 'Site vitrine (5 pages)', desc: 'Design personnalisé, responsive, formulaire de contact. Hébergement non inclus.', price: '180 000 – 350 000' },
-      { name: 'Landing page', desc: 'Page unique orientée conversion. Livraison 5 jours.', price: '80 000 – 150 000' },
-      { name: 'Site e-commerce', desc: 'Boutique en ligne, catalogue, panier, paiement en ligne.', price: '350 000 – 700 000' },
+      { name: 'Site vitrine (5 pages)', desc: 'Design personnalisé, responsive, formulaire de contact. Hébergement non inclus.', price: '245 000 – 475 000' },
+      { name: 'Landing page', desc: 'Page unique orientée conversion. Livraison 5 jours.', price: '110 000 – 205 000' },
+      { name: 'Site e-commerce', desc: 'Boutique en ligne, catalogue, panier, paiement en ligne.', price: '475 000 – 945 000' },
       { name: 'Application web sur mesure', desc: 'Développement métier sur cahier des charges.', price: 'Sur devis' },
-      { name: 'Maintenance & mises à jour', desc: 'Corrections, contenus, sécurité. Par mois.', price: '40 000' },
+      { name: 'Maintenance & mises à jour', desc: 'Corrections, contenus, sécurité. Par mois.', price: '60 000' },
     ]
   },
   social: {
