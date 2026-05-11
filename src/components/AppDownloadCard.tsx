@@ -1,7 +1,9 @@
 import { motion } from 'motion/react';
 import { Smartphone, QrCode, ArrowDown } from 'lucide-react';
+import { useLang } from '../i18n/context';
 
 export default function AppDownloadCard() {
+  const { t } = useLang();
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -16,8 +18,8 @@ export default function AppDownloadCard() {
           </div>
           
           <div className="flex-1">
-            <h4 className="font-semibold text-[#0f0f0f] mb-1">Télécharger l'app</h4>
-            <p className="text-xs text-[#6b7280] mb-3">Scannez ou cliquez pour installer</p>
+            <h4 className="font-semibold text-[#0f0f0f] mb-1">{t('appDownload.title')}</h4>
+            <p className="text-xs text-[#6b7280] mb-3">{t('appDownload.desc')}</p>
             
             <div className="flex items-center gap-2">
               <button className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#0f0f0f] text-white text-xs font-medium hover:opacity-80 transition-opacity">

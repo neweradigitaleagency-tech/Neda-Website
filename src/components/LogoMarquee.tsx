@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { useLang } from '../i18n/context';
 
 const partners = [
   { name: 'Google', color: '#4285F4' },
@@ -77,8 +78,9 @@ const Logo = ({ name, color }: { name: string; color: string }) => {
 };
 
 export default function LogoMarquee() {
+  const { t } = useLang();
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-20 px-6 bg-default">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -86,15 +88,15 @@ export default function LogoMarquee() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <p className="text-sm text-[#6B7280] font-medium mb-2"> nos partenaires</p>
-          <h2 className="text-2xl md:text-3xl font-semibold text-[#0A0A0A]">
-            Des technologies de référence mondiale
+          <p className="text-sm text-muted font-medium mb-2">{t('logoMarquee.label')}</p>
+          <h2 className="text-2xl md:text-3xl font-semibold text-default">
+            {t('logoMarquee.title')}
           </h2>
         </motion.div>
 
         <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-(--bg) to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-(--bg) to-transparent z-10 pointer-events-none" />
 
           <div className="overflow-hidden">
             <motion.div
@@ -112,7 +114,7 @@ export default function LogoMarquee() {
                   <div className="w-10 h-10 flex items-center justify-center opacity-50 group-hover:opacity-100 transition-opacity">
                     <Logo name={partner.name} color={partner.color} />
                   </div>
-                  <span className="text-lg font-semibold text-[#0A0A0A] opacity-40 group-hover:opacity-100 transition-opacity">
+                  <span className="text-lg font-semibold text-default opacity-40 group-hover:opacity-100 transition-opacity">
                     {partner.name}
                   </span>
                 </div>
